@@ -15,7 +15,7 @@
     {
       "matches": ["*://vine.co/*"],
       "all_frames": true,
-      "js": ["vine.js"],
+      "js": ["mangle.js","vine.js"],
       "run_at": "document_idle"
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bootleg",
+  "description": "Bootleg makes your browser play videos as if they were physical artifacts, degraded by use.",
+  "author": "Daniel McLaughlin",
+  "version": "0.0.1",
+
+  "permissions": [
+    "*://*.vine.co/"
+  ],
+
+  "content_scripts":
+  [
+    {
+      "matches": ["*://vine.co/*"],
+      "all_frames": true,
+      "js": ["vine.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
